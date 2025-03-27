@@ -1,7 +1,7 @@
 
 # Lokaal LLM Dashboard - AI Modellen op Ubuntu
 
-## 🔹 Over dit project
+## Over dit project
 ```md
 Dit project draait **lokale Large Language Models (LLM’s)** via **Ollama** en **Flask**, met een webinterface waar je eenvoudig kunt wisselen tussen AI-modellen zoals LLaMA3 en Mistral.
 
@@ -14,14 +14,14 @@ Om dit op te lossen, ben ik overgestapt naar Ubuntu, met geoptimaliseerde instel
 
 ```
 
-## 🔹 Huidige status
+## Huidige status
 ⚠️ Dit project is nog in ontwikkeling ⚠️ 
 
-## 🔹 Gebruikte hardware
+## Gebruikte hardware
 
 Dit project is getest en ontwikkeld op de volgende hardware:
 
-### 💻 **Laptops**
+### **Laptops**
 | Model                      | Processor       | RAM  | OS        | Opmerkingen |
 |----------------------------|----------------|------|-----------|-------------|
 | HP ProBook 450 G8 | Intel i5 | 16GB | Ubuntu 22.04 | Stabiel, AI-reacties redelijk snel |
@@ -39,21 +39,21 @@ Dit project is getest en ontwikkeld op de volgende hardware:
 
 
 
-**✅ Wat werkt nu?**
+**Wat werkt nu?**
 - LLaMA3 en Mistral draaien lokaal
 - Webinterface gebouwd met Flask
 - Dynamisch wisselen tussen modellen
 - Streaming van AI-antwoorden voor snellere reacties
 - Systeem draait stabiel op **Ubuntu 22.04**
 
-**🔄 Wat wordt nog verbeterd?**
+**Wat wordt nog verbeterd?**
 - Contextbeheer optimaliseren voor langere gesprekken
 - Meer modellen testen (bijv. DeepSeek, Gemma)
 - GPU-acceleratie inschakelen voor betere prestaties
 
 
 
-## 🔹 Installatie
+## Installatie
 
 ### **Stap 1: Installeer Ollama**
 Ollama is nodig om de AI-modellen lokaal te draaien.
@@ -79,10 +79,10 @@ ollama pull mistral
 Stap 4: Start de webserver
 ```md
 De webinterface is nu bereikbaar via:  
-🔗 [http://127.0.0.1:5004/](http://127.0.0.1:5004/)
+[http://127.0.0.1:5004/](http://127.0.0.1:5004/)
 ```
 
-**🔹 Webinterface en werking**
+**Webinterface en werking**
 
   De webinterface is gebouwd met HTML, CSS en JavaScript en biedt de volgende functies:
 
@@ -94,7 +94,7 @@ De webinterface is nu bereikbaar via:
 - Streaming-reacties (geen lange wachttijd)
 
 
-## 🔹 **Problemen en oplossingen**
+## **Problemen en oplossingen**
 
 
 **Probleem:** De afbeelding pindahoofd.png werd niet geladen.
@@ -124,11 +124,11 @@ payload = {"model": selected_model, "prompt": user_message, "stream": True}
 
 
 
-🔹 GPU-versnelling (optioneel)
+GPU-versnelling (optioneel)
 
 Dit project kan GPU-versnelling gebruiken als je een NVIDIA-kaart hebt met CUDA-ondersteuning.
 
-⚠️ **Let op**: Dit is niet getest, omdat mijn huidige hardware geen GPU-versnelling ondersteunt.
+**Let op**: Dit is niet getest, omdat mijn huidige hardware geen GPU-versnelling ondersteunt.
 
 Als je een geschikte GPU hebt, kun je Ollama starten met CUDA-ondersteuning:
 
@@ -143,7 +143,7 @@ nvidia-smi
 ```
 Het werkt ook nog steeds op CPU, maar AI-reacties zullen trager zijn.
 
-🔹 Conclusie
+Conclusie
 
 Dit project toont aan hoe je lokale LLM-modellen kunt draaien en besturen via een webinterface.
 De overstap van Windows naar Ubuntu heeft de prestaties en stabiliteit flink verbeterd.
